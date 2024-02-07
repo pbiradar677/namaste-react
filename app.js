@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 // Create a h1 element
 // syntax const element = createElement(type, props, ...children)
 const h1 = React.createElement(
@@ -22,8 +24,7 @@ console.log(root); // Object
 
 // root.render(h1);
 
-
-/** part 04 
+/** part 04
  *  <div id="parent">
  *      <div id="child">
  *           <h1></h1>
@@ -40,7 +41,7 @@ const parent = React.createElement(
   [
     h1,
     React.createElement("div", { id: "child1", key: "child1" }, [
-      React.createElement("h1", { key: "child1h1" }, "I am a h1 tag "),
+      React.createElement("h1", { key: "child1h1" }, "This is Namaste React 🚀"),
 
       React.createElement("h2", { key: "child1h2" }, "I am a h2 tag "),
     ]),
@@ -52,6 +53,6 @@ const parent = React.createElement(
   ]
 );
 
-// console.log(parent);
+console.log(parent);
 // React create element return an object and while rendering into the dom it will automatically converted to the html  element or tag
-root.render(h1);
+root.render(parent);
