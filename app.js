@@ -38,6 +38,7 @@ const parent = React.createElement(
     id: "parent",
   },
   [
+    h1,
     React.createElement("div", { id: "child1", key: "child1" }, [
       React.createElement("h1", { key: "child1h1" }, "I am a h1 tag "),
 
@@ -53,4 +54,4 @@ const parent = React.createElement(
 
 // console.log(parent);
 // React create element return an object and while rendering into the dom it will automatically converted to the html  element or tag
-root.render(parent);
+root.render(h1);
